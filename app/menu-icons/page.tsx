@@ -73,7 +73,7 @@ const IconArrow = () => {
     const [active, setActive] = useState(false);
     return (
         <motion.button className="relative h-6 w-8 outline-none flex flex-col justify-between" onClick={() => setActive(!active)} animate={active ? "open" : "closed"}>
-            <motion.div className="h-[2px] w-8 bg-slate-900 rounded-full origin-left" variants={{ closed: { rotate: 0, x: 0 }, open: { rotate: -45, x: 2, w: "60%" } }} />
+            <motion.div className="h-[2px] w-8 bg-slate-900 rounded-full origin-left" variants={{ closed: { rotate: 0, x: 0 }, open: { rotate: -45, x: 2, width: "60%" } }} />
             <motion.div className="h-[2px] w-8 bg-slate-900 rounded-full" variants={{ closed: { x: 0 }, open: { x: 4 } }} />
             <motion.div className="h-[2px] w-8 bg-slate-900 rounded-full origin-left" variants={{ closed: { rotate: 0, x: 0 }, open: { rotate: 45, x: 2 } }} />
         </motion.button>
